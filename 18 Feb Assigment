@@ -1,0 +1,103 @@
+Q1. What is an API? Give an example, where an API is used in real life
+
+ANS .An API, or Application Programming Interface, is a server that you can use to retrieve and send data to using code. APIs are most commonly used to retrieve data,
+and that will be the focus of this beginner tutorial.
+When we want to receive data from an API, we need to make a request. Requests are used all over the web. For instance, when you visited this blog post, your web 
+browser made a request to the Dataquest web server, which responded with the content of this web page.
+
+UESD OF API--
+APIs are used by web applications to link functionality and data on the back end with the user-facing front end. APIs are used to deliver content by streaming services
+like Spotify and Netflix. APIs are used to provide software updates by automakers like Tesla.
+
+
+Q2. Give advantages and disadvantages of using API.
+ANS. ADVANTAGES
+Efficiency: When you have content that is automatically published and made available on different channels simultaneously, APIs allow for more efficient data distribution.
+Adaptability: One of the greatest benefits of APIs is the ability it has to adapt to changes through data migration and flexibility of services.
+
+DISADVANTAGES--
+
+.Creating API is a very time-consuming process.
+.A fixed scale is necessary.
+.Imprecise boundary delineation.
+.To create API, programming knowledge is necessary.
+.Maintenance cost is very high.
+.It can crash when testing API.
+
+Q3. What is a Web API? Differentiate between API and Web API.
+ANS. The ASP.NET Web API is an extensible framework for building HTTP based services that can be accessed in different applications on different platforms such as web,
+windows, mobile etc. It works more or less the same way as ASP.NET MVC web application except that it sends data as a response instead of html view. It is like a 
+webservice or WCF service but the exception is that it only supports HTTP protocol.
+
+
+Web Serviced	                                                                           API
+1.All web services are APIs.	                                                      1.All APIs are not web services.
+2.It supports XML.	                                                                2.Responses are formatted using Web API’s MediaTypeFormatter into XML, JSON, or any other given format.
+3.You need a SOAP protocol to send or                                             
+   receive and data over the network.                                              	3.API has a light-weight architecture. 
+   Therefore it does not have light-weight architecture.                              
+4.It can be used by any client who understands XML.                                	4.It can be used by a client who understands JSON or XML.
+   Web service uses three styles: REST,
+5.SOAP, and XML-RPC for communication.                                             	5.API can be used for any style of communication.
+6.It provides supports only for the HTTP protocol.	                                6.It provides support for the HTTP/s protocol: URL Request/Response Headers, etc.
+
+Q4. Explain REST and SOAP Architecture. Mention shortcomings of SOAP.
+ANS. REST (Representational State Transfer) and SOAP (Simple Object Access Protocol) are both popular web services architectures for building distributed systems.
+Here's a brief overview of each:
+
+REST Architecture:
+
+.REST is an architectural style that uses HTTP requests and responses to transfer data between clients and servers.
+.It is based on a client-server model and uses simple, lightweight protocols like HTTP, and typically supports data formats like JSON or XML.
+.RESTful services have URLs for resources, and clients can request data in different formats like JSON or XML using standard HTTP methods like GET, POST, PUT, and DELETE.
+.REST architecture is very popular in modern web development and is used by many APIs such as Twitter, Github, and Google Maps.
+
+SOAP Architecture:
+
+.SOAP is a protocol for exchanging structured data between applications, and it typically uses XML as the data format.
+.SOAP is based on a messaging model, where a client sends a request to a server, and the server returns a response.
+.It uses a complex messaging format and protocol, with a defined set of rules for message processing, which can be less flexible compared to REST.
+.SOAP services typically have a Web Services Description Language (WSDL) file that describes the service, and clients use the WSDL file to generate code to interact with the service.
+.SOAP is still widely used in enterprise systems, especially in situations where complex, structured data needs to be exchanged between different systems..
+
+Shortcomings of SOAP:
+
+.SOAP has a more complex messaging format, which makes it more difficult to implement and use than REST.
+.SOAP requires a lot of boilerplate code to work with, which can make it slower and more resource-intensive than REST.
+.SOAP is often seen as a heavyweight solution compared to REST, which can make it less suitable for use in modern web applications.
+.SOAP is not as flexible as REST, as it requires that clients and servers understand the same message structure and protocol, which can make it difficult to work with in some cases.
+
+
+
+
+
+Q5. Differentiate between REST and SOAP.
+
+ANS. 
+REST and SOAP are both protocols used for web services, but they differ in several ways, including:
+
+Architecture: REST (Representational State Transfer) is an architectural style for building web services that uses HTTP requests to access and manipulate resources,
+while SOAP (Simple Object Access Protocol) is a protocol that uses XML for message formatting and relies on other protocols such as HTTP, SMTP, or TCP for
+communication.
+
+Message format: REST typically uses lightweight formats such as JSON or XML for transmitting data between the client and server, while SOAP messages are always
+in XML format.
+
+Verbosity: REST is often considered more lightweight and less verbose than SOAP. In REST, the request URL itself often contains enough information for the server
+to process the request, whereas SOAP requires more XML to be transmitted for each request.
+
+Scalability: REST is generally considered more scalable than SOAP because it has fewer constraints on the format of the data being transmitted, and can support
+a wider range of data formats and protocols.
+
+Caching: REST allows for caching of responses, which can improve performance, while SOAP responses are not typically cacheable.
+
+Security: SOAP has built-in support for security features such as digital signatures and encryption, while REST relies on other standards such as SSL/TLS to provide 
+security.
+
+In summary, REST is an architectural style that emphasizes simplicity, scalability, and flexibility, while SOAP is a protocol that emphasizes strict message
+formatting, security, and interoperability. REST is often preferred for simple, lightweight web services, while SOAP is often used in enterprise-level 
+applications where strict message formatting and security are critical.
+
+
+
+
